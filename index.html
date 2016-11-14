@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <title>musicMap</title>
+</head>
+
+
+<body class="container">
+    <header class="row">
+
+        <hgroup class="col s10">
+            <h1>MusicMap</h1>
+            <h5><em>Follow Your Favorite Bands on Tour</em></h5>
+        </hgroup>
+
+        <a class="col s2" href=""><i class="medium material-icons">reorder</i></a>
+
+    </header>
+
+    <main class="row">
+
+        <section class="col s8">
+            <section id="map-canvas" class="row"></section>
+        </section>
+
+
+        <section class="col s4">
+
+            <input class="row" placeholder="Enter Artist Name" type="text" name="search" value=""></input>
+            <button type="search">Where They Goin'?</button>
+
+            <aside class="row">
+                <span id="artist-img">
+                    <h3>IMG placeholder</h3>
+                </span>
+
+                <article id="bio">
+                    <h3>BIO</h3>
+                    <p>Bacon ipsum dolor amet salami biltong turducken shank. Short loin pork loin pastrami ribeye. Prosciutto pastrami porchetta, ham shoulder hamburger drumstick t-bone shank. Sirloin pork chop flank, fatback ribeye spare ribs rump corned
+                        beef hamburger cow meatball shankle bresaola ham hock. Meatloaf picanha bresaola, pork belly kevin pig hamburger.</p>
+                </article>
+
+                <article id="about">
+                    <h3>ABOUT</h3>
+                    <p> <em>G r o u p i e (group·ie): an ethusiastic follower of music bands and artists who enojoys following them on concert tours.</em>
+                        <p>MusicMap displays your favorite band's touring history and upcoming events. Search for an artist to see an interactive map view of the places in the world they tour the most as well as information about upcoming events.</p>
+                </article>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+    <footer class="row"></footer>
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ6t0QM7GGDC_7GeP519-35BwzAPbbhRs&libraries=visualization&callback=initMap">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+
+</body>
+
+</html>

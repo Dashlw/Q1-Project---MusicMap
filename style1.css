@@ -1,0 +1,57 @@
+body {
+    background-image: url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c21.jpg");
+    /*http://patrickfarber.com/wp-content/uploads/2014/06/dark-blue-texture-14411.jpg*/
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    font-family: Arial;
+    color: #BFB48F;
+}
+
+.container {
+    width: 100vw;
+}
+
+hgroup {
+    font-size: 3.5em;
+    margin-top: .5em;
+    margin-bottom: 0em;
+}
+
+h1 {
+    margin-bottom: 0em;
+}
+
+i {
+    color: #FFF0BF;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+#map-canvas {
+    height: 108vh;
+    width: 58vw;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5em;
+}
+
+#about {
+    /*display: none;*/
+    /*background-color: gray;*/
+}
+
+#bio {
+    /*display: none;*/
+    /*background-color: red;*/
+}
+
+#artist-img {
+    /*display: none;*/
+    /*background-color: yellow;*/
+    /*height: 40vh;*/
+}
