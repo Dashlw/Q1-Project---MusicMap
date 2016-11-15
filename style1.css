@@ -4,7 +4,7 @@ body {
     height: 100%;
     width: 100%;
     opacity: .8;
-    font-family: Arial;
+    font-family: 'Poiret One', Tahoma;
     color: #BFB48F;
 }
 
@@ -13,12 +13,12 @@ body {
 }
 
 hgroup {
-    font-size: 3.5em;
     margin-top: .5em;
     margin-bottom: 0em;
 }
 
 h1 {
+    font-size: 4.5em;
     margin-bottom: 0em;
 }
 
@@ -26,6 +26,11 @@ i {
     color: #FFF0BF;
     margin-top: 1em;
     margin-left: 2em;
+}
+
+#err {
+    font-size: 1.5em;
+    display: none;
 }
 
 #map-canvas {

@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style1.css">
-    <title>musicMap</title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <title>MusicMap</title>
 </head>
 
 
@@ -31,8 +32,11 @@
 
         <section class="col s4">
 
+            <p id="err">Artist Not Found, Please Try Again</p>
             <input class="row" placeholder="Enter Artist Name" type="text" name="search" value=""></input>
             <button type="search">Where They Goin'?</button>
+
+
 
             <aside class="row">
                 <span id="artist-img">
@@ -60,10 +64,11 @@
     <footer class="row"></footer>
 
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ6t0QM7GGDC_7GeP519-35BwzAPbbhRs&libraries=visualization&callback=initMap">
-    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     <script type="text/javascript" src="index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ6t0QM7GGDC_7GeP519-35BwzAPbbhRs&libraries=visualization&callback=initMap">
+    </script>
 
 
 </body>
