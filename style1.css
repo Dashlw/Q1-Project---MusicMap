@@ -1,12 +1,8 @@
 body {
-    /*background-image: url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c21.jpg");*/
-    /*http://patrickfarber.com/wp-content/uploads/2014/06/dark-blue-texture-14411.jpg*/
-    background-color: #121B2E;
     height: 100%;
     width: 100%;
-    opacity: .6;
     font-family: 'Poiret One', Tahoma;
-    color: #FFF0BF;
+    color: #CE1483;
 }
 
 .container {
@@ -14,19 +10,30 @@ body {
 }
 
 hgroup {
-    margin-top: .5em;
-    margin-bottom: 0em;
+    margin-bottom: 0px;
 }
 
 h1 {
-    font-size: 4.5em;
     margin-bottom: 0em;
+    font-family: 'Anton', sans-serif;
 }
 
-i {
-    color: #FFF0BF;
-    margin-top: 1em;
-    margin-left: 2em;
+b {
+    font-family: 'Poiret One', cursive;
+}
+
+a {
+    margin-top: 2.5em;
+}
+
+#responsive-menu {
+    display: none;
+    margin-left: 0px;
+}
+
+li {
+    display: inline;
+    padding-right: 1.7em;
 }
 
 #err {
@@ -42,26 +49,17 @@ i {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: .5em;
+    align-items: center;
 }
 
-#input {
-    font-size: 2em;
+.search {
+    font-size: 1em;
+    padding: 2em;
 }
 
-#about {
-    /*display: none;*/
-    /*background-color: gray;*/
-}
-
-#bio {
-    /*display: none;*/
-    /*background-color: red;*/
-}
-
-#artist-img {
-    /*display: none;*/
-    /*background-color: yellow;*/
-    /*height: 40vh;*/
+.artist-img {
+    padding-left: 4em;
+    padding-top: 4em;
+    height: 75vh;
+    width: 35vw;
 }
