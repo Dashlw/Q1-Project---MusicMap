@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width: 85vw;
+    width: 80vw;
 }
 
 hgroup {
@@ -53,12 +53,13 @@ input {
 
 #err {
     font-size: 2em;
+    color: black !important;
     display: none;
 }
 
 #map-canvas {
     height: 90vh;
-    width: 50vw;
+    width: 45vw;
     margin: auto;
     padding: 2em;
 }
@@ -83,4 +84,8 @@ aside {
     padding-top: 3em;
     height: 80vh;
     width: 40vw;
+}
+
+img.materialboxed.initialized {
+    border: none;
 }
