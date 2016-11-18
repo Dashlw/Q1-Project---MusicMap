@@ -6,11 +6,16 @@ body {
 }
 
 .container {
-    width: 100vw;
+    width: 85vw;
 }
 
 hgroup {
     margin-bottom: 0px;
+}
+
+main {
+    background-color: #CE1483;
+    height: 95vh;
 }
 
 h1 {
@@ -18,12 +23,17 @@ h1 {
     font-family: 'Anton', sans-serif;
 }
 
+h3 {
+    color: black !important;
+    font-size: 3em !important;
+}
+
 b {
     font-family: 'Poiret One', cursive;
 }
 
 a {
-    margin-top: 2.5em;
+    margin-top: 2.8em;
 }
 
 #responsive-menu {
@@ -36,14 +46,21 @@ li {
     padding-right: 1.7em;
 }
 
+input {
+    color: black !important;
+    font-size: 2.5em !important;
+}
+
 #err {
     font-size: 2em;
     display: none;
 }
 
 #map-canvas {
-    height: 108vh;
-    width: 58vw;
+    height: 90vh;
+    width: 50vw;
+    margin: auto;
+    padding: 2em;
 }
 
 aside {
@@ -57,9 +74,13 @@ aside {
     padding: 2em;
 }
 
+.map {
+    /*background-color: yellow;*/
+}
+
 .artist-img {
-    padding-left: 4em;
-    padding-top: 4em;
-    height: 75vh;
-    width: 35vw;
+    padding-left: 3em;
+    padding-top: 3em;
+    height: 80vh;
+    width: 40vw;
 }

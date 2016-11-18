@@ -21,7 +21,7 @@ $("#mainButton").click(function() {
     $.get('https://galvanize-cors-proxy.herokuapp.com/http://api.bandsintown.com/artists/' + artist + '/events.json?api_version=2.0&app_id=musicmap&date=all')
 
     .then(function(data) {
-        // console.log(data);
+        console.log(data);
 
         clearCircles()
 
@@ -31,7 +31,9 @@ $("#mainButton").click(function() {
         var artistName = data[0].artists[0].name;
         $('h3').append(artistName)
 
-        // var windowContent =
+        var windowContent = "";
+
+        // console.log(windowContent);
 
         var cityList = {}
         for (var j = 0; j < data.length; j++) {
@@ -43,6 +45,7 @@ $("#mainButton").click(function() {
                         lat: data[j].venue.latitude,
                         lng: data[j].venue.longitude
                     },
+                    name: city,
                     count: 1,
                 };
             } else {
@@ -59,15 +62,30 @@ $("#mainButton").click(function() {
                 fillColor: '#CE1483',
                 fillOpacity: 0.35,
                 map: map,
+                position: cityList[city].center,
                 center: cityList[city].center,
                 radius: Math.sqrt(cityList[city].count) * 8000
 
             });
 
-            circles.push(cityCircle)
+            circles.push(cityCircle);
+
+            (function(cityCircle, city) {
+                var infowindow = new google.maps.InfoWindow({
+                    content: "<p><b>" + city.name + "</b></p>" +
+                        "<p>" + city.count + "</p>"
+                });
+
+                var c = cityCircle.addListener('mouseover', function() {
+                    infowindow.open(map, cityCircle);
+                });
+
+                cityCircle.addListener('mouseout', function() {
+                    google.maps.event.removeListener(c);
+                });
 
 
-
+            }(cityCircle, cityList[city]));
         } // end circle add
 
         $('#err').hide();
